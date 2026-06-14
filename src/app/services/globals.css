@@ -1,0 +1,179 @@
+/* ========================================================= */
+/* SERVICES PAGE STYLES                                      */
+/* ========================================================= */
+
+.services-main {
+  width: 100%;
+  background-color: #ffffff;
+  color: #111827;
+  padding-bottom: 120px;
+}
+
+/* Services Hero */
+.services-hero {
+  width: 94.1%;
+  margin: 0 auto;
+  border-left: 3px solid #bcbcbc;
+  padding: 80px 0 60px 40px;
+}
+
+.services-sub-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #8f8f8f;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.services-main-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 65px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #2b2b2b;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.services-hero-description {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555555;
+  font-weight: 300;
+  max-width: 650px;
+}
+
+/* Separator Line */
+.services-separator {
+  width: 94.1%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 3px solid #bcbcbc;
+}
+
+/* Capabilities Section */
+.capabilities-section {
+  width: 94.1%;
+  margin: 0 auto;
+  border-left: 3px solid #bcbcbc;
+  padding: 80px 40px;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 80px;
+}
+
+.capability-item {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 30px;
+}
+
+.capability-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #2b2b2b;
+  margin-bottom: 15px;
+}
+
+.capability-desc {
+  font-family: "Cormorant", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6a6a6a;
+  font-weight: 300;
+}
+
+/* Process Section */
+.services-process-section {
+  width: 94.1%;
+  margin: 0 auto;
+  border-left: 3px solid #bcbcbc;
+  padding: 60px 40px;
+}
+
+.process-header {
+  margin-bottom: 60px;
+}
+
+.process-tag {
+  font-family: "Cormorant Integration", serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #8f8f8f;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.process-header .process-main-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 45px;
+  font-weight: 300;
+  color: #2b2b2b;
+  font-style: italic;
+}
+
+/* Process Timeline Grid */
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.process-step {
+  border-top: 1px solid #bcbcbc;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step-phase {
+  font-family: "Italianno", cursive;
+  font-size: 45px;
+  color: #8f8f8f;
+  line-height: 1;
+}
+
+.step-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #2b2b2b;
+  margin-bottom: 12px;
+}
+
+.step-body {
+  font-family: "Cormorant", serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6a6a6a;
+  font-weight: 300;
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-timeline {
+    grid-template-columns: 1fr;
+  }
+  .services-hero, .capabilities-section, .services-process-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
