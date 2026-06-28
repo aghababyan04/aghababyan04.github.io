@@ -1,13 +1,14 @@
-
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Այս տողը թույլ է տալիս ստեղծել ստատիկ HTML/CSS
+  output: "export",
+
   images: {
-    unoptimized: true, // Կարևոր է, քանի որ GitHub-ը չունի Next-ի նկարների օպտիմիզացման սերվերը
+    unoptimized: true,
   },
-  /* config options here */
-  reactCompiler: true,
+
+  // ավելի safe տարբերակ
+  reactCompiler: false,
 };
 
 export default nextConfig;
